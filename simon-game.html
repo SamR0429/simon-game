@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Game!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/simon-game.css">
+
+</head>
+
+<body>
+
+<div id="outer-circle">
+    <div id="topLeft"></div>
+    <div id="topRight"></div>
+    <div id="bottomLeft"></div>
+    <div id="bottomRight"></div>
+    <div id="inner-circle">
+        <div id="title" class="font-effect-emboss">SIMON</div>
+        <div id="switches">
+            <input type="checkbox" class="toggle" id="on">
+            <button class="button" id="start">Start</button>
+            <input type="checkbox" class="toggle" id="strict">
+        </div>
+        <div class="text1">
+            <span>POWER</span>
+            <span></span>
+        </div>
+        <div id="turn"></div>
+        <div class="text2">
+            COUNT
+        </div>
+    </div>
+</div>
+
+<script type="module" src="js/simon-game.js"></script>
+
+<audio id="clip1">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+</audio>
+<audio id="clip2">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+</audio>
+<audio id="clip3">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+</audio>
+<audio id="clip4">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+</audio>
+
+
+</body>
+</html>
